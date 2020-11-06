@@ -56,7 +56,7 @@
                 <End Multiplicity="*" Role="Supplier" Type="SuppliersModel.Supplier"/>
                 <ReferentialConstraint>
                     <Principal Role="Product">
-                        <PropertyRef Name="ProductKey"/>
+                        <PropertyRef Name="SupplierId"/>
                     </Principal>
                     <Dependent Role="Supplier">
                         <PropertyRef Name="Id"/>
@@ -68,7 +68,7 @@
                 <End Multiplicity="*" Role="Product" Type="SuppliersModel.Product"/>
                 <ReferentialConstraint>
                     <Principal Role="Order">
-                        <PropertyRef Name="OrderKey"/>
+                        <PropertyRef Name="ProductId"/>
                     </Principal>
                     <Dependent Role="Product">
                         <PropertyRef Name="Id"/>
