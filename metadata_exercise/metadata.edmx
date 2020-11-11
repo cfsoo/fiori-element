@@ -19,7 +19,7 @@
                 <Property Name="PostalCode" Type="Edm.String" MaxLength="10" />
                 <Property Name="Country" Type="Edm.String" MaxLength="15" />
                 <Property Name="Phone" Type="Edm.String" MaxLength="24" />
-                <Property Name="Website" Type="Edm.String" MaxLength="Max" />
+                <Property Name="Website" Type="Edm.String" MaxLength="Max" /> 
 
                 <NavigationProperty FromRole="Supplier" Name="Product" Relationship="SuppliersModel.FK_Supplier_Product" ToRole="Product"/>
 
