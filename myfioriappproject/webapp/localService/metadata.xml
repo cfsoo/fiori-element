@@ -132,24 +132,16 @@
                         <PropertyValue Property="Insertable" Bool="false"/>
                     </Record>
                 </Annotation>
-            </Annotations>
-
-            <Annotations Target="SuppliersModel.SupplierEntities/Suppliers"
-                xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Capabilities.UpdateRestrictions">
                     <Record Type="Capabilities.UpdateRestrictionsType">
                         <PropertyValue Property="Updatable" Bool="false"/>
                     </Record>
-                </Annotation>
-            </Annotations>
-
-            <Annotations Target="SuppliersModel.SupplierEntities/Suppliers"
-                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                </Annotation> 
                 <Annotation Term="Capabilities.DeleteRestrictions">
                     <Record Type="Capabilities.DeleteRestrictionsType">
                         <PropertyValue Property="Deletable" Bool="false"/>
                     </Record>
-                </Annotation>
+                </Annotation>                               
             </Annotations>
 
             <Annotations Target="SuppliersModel.Supplier/Name"
