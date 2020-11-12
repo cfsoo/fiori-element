@@ -16,7 +16,8 @@
         "Country": "United Kingdom",
         "Phone": "(171) 555-2222",
         "Fax": null,
-        "Website":"https://www.google.com/",
+        "Website": "https://www.google.com/",
+        "CountryId": "UK",
         "Products": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Suppliers(1)/Products"
@@ -37,10 +38,11 @@
         "City": "New Orleans",
         "Region": "LA",
         "PostalCode": "70117",
-        "Country": "USA",
+        "Country": "Japan",
         "Phone": "(100) 555-4822",
         "Fax": null,
-        "Website":"https://www.google.com/",
+        "Website": "https://www.google.com/",
+        "CountryId": "JPN",
         "Products": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Suppliers(2)/Products"
@@ -61,10 +63,11 @@
         "City": "Ann Arbor",
         "Region": "MI",
         "PostalCode": "48104",
-        "Country": "USA",
+        "Country": "Spain",
         "Phone": "(313) 555-5735",
         "Fax": "(313) 555-3349",
-        "Website":"https://www.google.com/",
+        "Website": "https://www.google.com/",
+        "CountryId": "SPN",
         "Products": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Suppliers(3)/Products"
@@ -88,7 +91,8 @@
         "Country": "Japan",
         "Phone": "(03) 3555-5011",
         "Fax": null,
-        "Website":"https://www.google.com/",
+        "Website": "https://www.google.com/",
+        "CountryId": "JPN",
         "Products": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Suppliers(4)/Products"
@@ -109,10 +113,11 @@
         "City": "Oviedo",
         "Region": "Asturias",
         "PostalCode": "33007",
-        "Country": "Spain",
+        "Country": "United States",
         "Phone": "(98) 598 76 54",
         "Fax": null,
-        "Website":"https://www.google.com/",
+        "Website": "https://www.google.com/",
+        "CountryId": "USA",
         "Products": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Suppliers(5)/Products"
