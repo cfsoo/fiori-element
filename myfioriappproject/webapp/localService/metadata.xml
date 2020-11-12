@@ -9,7 +9,7 @@ xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
 xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
 <EntityType Name="Supplier">
     <Key>
-        <PropertyRef Name="SupplierKey"/>
+        <PropertyRef Name="Id"/>
     </Key>
     <Property Name="Id" Type="Edm.Int32"/>
     <Property Name="Name" Type="Edm.String" MaxLength="40" />
@@ -26,7 +26,7 @@ xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
 </EntityType>
 <EntityType Name="Product">
     <Key>
-        <PropertyRef Name="ProductKey"/>
+        <PropertyRef Name="Id"/>
     </Key>
     <Property Name="Id" Type="Edm.Int32"/>
     <Property Name="Name" Type="Edm.String" MaxLength="40" />
