@@ -300,6 +300,36 @@
                 </Annotation>
             </Annotations>
 
+            <Annotations Target="SuppliersModel.Product/Name"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Product">
+                </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.Product/UnitsInStock"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Units In Stock">
+                </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.Product/UnitPrice"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Unit Price">
+                </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.Product/Discontinued"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Discontinued">
+                </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.Product/QuantityPerUnit"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Quantity Per Unit">
+                </Annotation>
+            </Annotations>
+            
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
