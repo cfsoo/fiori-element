@@ -12,6 +12,7 @@
         "UnitsInStock": 39,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(1)/Orders"
@@ -31,6 +32,7 @@
         "UnitsInStock": 17,
         "UnitsOnOrder": 40,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(2)/Orders"
@@ -50,6 +52,7 @@
         "UnitsInStock": 13,
         "UnitsOnOrder": 70,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(3)/Orders"
@@ -69,6 +72,7 @@
         "UnitsInStock": 53,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(4)/Orders"
@@ -88,6 +92,7 @@
         "UnitsInStock": 0,
         "UnitsOnOrder": 0,
         "Discontinued": true,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(5)/Orders"
@@ -107,6 +112,7 @@
         "UnitsInStock": 120,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(6)/Orders"
@@ -126,6 +132,7 @@
         "UnitsInStock": 15,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(7)/Orders"
@@ -145,6 +152,7 @@
         "UnitsInStock": 6,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(8)/Orders"
@@ -164,6 +172,7 @@
         "UnitsInStock": 29,
         "UnitsOnOrder": 0,
         "Discontinued": true,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(9)/Orders"
@@ -183,6 +192,7 @@
         "UnitsInStock": 31,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(10)/Orders"
@@ -202,6 +212,7 @@
         "UnitsInStock": 22,
         "UnitsOnOrder": 30,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(11)/Orders"
@@ -221,6 +232,7 @@
         "UnitsInStock": 86,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(12)/Orders"
@@ -240,6 +252,7 @@
         "UnitsInStock": 24,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(13)/Orders"
@@ -259,6 +272,7 @@
         "UnitsInStock": 35,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(14)/Orders"
@@ -278,6 +292,7 @@
         "UnitsInStock": 39,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(15)/Orders"
@@ -297,6 +312,7 @@
         "UnitsInStock": 29,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(16)/Orders"
@@ -316,6 +332,7 @@
         "UnitsInStock": 0,
         "UnitsOnOrder": 0,
         "Discontinued": true,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(17)/Orders"
@@ -335,7 +352,8 @@
         "UnitsInStock": 42,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-         "Orders": {
+        "CurrencyKey": "USD",
+        "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(18)/Orders"
             }
@@ -354,6 +372,7 @@
         "UnitsInStock": 25,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(19)/Orders"
@@ -373,6 +392,7 @@
         "UnitsInStock": 40,
         "UnitsOnOrder": 0,
         "Discontinued": false,
+        "CurrencyKey": "USD",
         "Orders": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(20)/Orders"
