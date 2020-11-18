@@ -116,6 +116,12 @@
 
             <Annotations Target="SuppliersModel.Supplier"
                 xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="UI.HeaderInfo">
+                    <Record Type="UI.HeaderInfoType">
+                        <PropertyValue Property="TypeName" String="Supplier"/>
+                        <PropertyValue Property="TypeNamePlural" String="Suppliers"/>
+                    </Record>
+                </Annotation>
                 <Annotation Term="UI.LineItem">
                     <Collection>
                         <Record Type="UI.DataField">
