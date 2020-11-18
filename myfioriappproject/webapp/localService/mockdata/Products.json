@@ -12,19 +12,9 @@
         "UnitsInStock": 39,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(1)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(1)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(1)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(1)/Orders"
             }
         }
     },
@@ -41,19 +31,9 @@
         "UnitsInStock": 17,
         "UnitsOnOrder": 40,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(2)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(2)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(2)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(2)/Orders"
             }
         }
     },
@@ -70,19 +50,9 @@
         "UnitsInStock": 13,
         "UnitsOnOrder": 70,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(3)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(3)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(3)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(3)/Orders"
             }
         }
     },
@@ -99,19 +69,9 @@
         "UnitsInStock": 53,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(4)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(4)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(4)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(4)/Orders"
             }
         }
     },
@@ -128,19 +88,9 @@
         "UnitsInStock": 0,
         "UnitsOnOrder": 0,
         "Discontinued": true,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(5)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(5)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(5)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(5)/Orders"
             }
         }
     },
@@ -157,19 +107,9 @@
         "UnitsInStock": 120,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(6)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(6)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(6)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(6)/Orders"
             }
         }
     },
@@ -186,19 +126,9 @@
         "UnitsInStock": 15,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(7)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(7)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(7)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(7)/Orders"
             }
         }
     },
@@ -215,19 +145,9 @@
         "UnitsInStock": 6,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(8)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(8)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(8)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(8)/Orders"
             }
         }
     },
@@ -244,19 +164,9 @@
         "UnitsInStock": 29,
         "UnitsOnOrder": 0,
         "Discontinued": true,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(9)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(9)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(9)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(9)/Orders"
             }
         }
     },
@@ -273,19 +183,9 @@
         "UnitsInStock": 31,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(10)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(10)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(10)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(10)/Orders"
             }
         }
     },
@@ -302,19 +202,9 @@
         "UnitsInStock": 22,
         "UnitsOnOrder": 30,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(11)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(11)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(11)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(11)/Orders"
             }
         }
     },
@@ -331,19 +221,9 @@
         "UnitsInStock": 86,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(12)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(12)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(12)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(12)/Orders"
             }
         }
     },
@@ -360,19 +240,9 @@
         "UnitsInStock": 24,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(13)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(13)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(13)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(13)/Orders"
             }
         }
     },
@@ -389,19 +259,9 @@
         "UnitsInStock": 35,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(14)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(14)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(14)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(14)/Orders"
             }
         }
     },
@@ -418,19 +278,9 @@
         "UnitsInStock": 39,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(15)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(15)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(15)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(15)/Orders"
             }
         }
     },
@@ -447,19 +297,9 @@
         "UnitsInStock": 29,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(16)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(16)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(16)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(16)/Orders"
             }
         }
     },
@@ -476,19 +316,9 @@
         "UnitsInStock": 0,
         "UnitsOnOrder": 0,
         "Discontinued": true,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(17)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(17)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(17)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(17)/Orders"
             }
         }
     },
@@ -505,19 +335,9 @@
         "UnitsInStock": 42,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
+         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(18)/Category"
-            }
-        },
-        "Orders": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(18)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(18)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(18)/Orders"
             }
         }
     },
@@ -534,19 +354,9 @@
         "UnitsInStock": 25,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(19)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(19)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(19)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(19)/Orders"
             }
         }
     },
@@ -563,19 +373,9 @@
         "UnitsInStock": 40,
         "UnitsOnOrder": 0,
         "Discontinued": false,
-        "Category": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(20)/Category"
-            }
-        },
         "Orders": {
             "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(20)/Order_Details"
-            }
-        },
-        "Supplier": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(20)/Supplier"
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products(20)/Orders"
             }
         }
     }
