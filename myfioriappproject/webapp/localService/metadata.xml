@@ -132,6 +132,7 @@
                 <EntitySet EntityType="SuppliersModel.Supplier" Name="Suppliers"/>
                 <EntitySet EntityType="SuppliersModel.Product" Name="Products"/>
                 <EntitySet EntityType="SuppliersModel.Order" Name="Orders"/>
+                <EntitySet EntityType="SuppliersModel.ContactPerson" Name="ContactPersons"/>
                 <EntitySet EntityType="SuppliersModel.VH_Country" Name="VH_Countries"/>
                 <AssociationSet Association="SuppliersModel.FK_Supplier_Product" Name="SUP_TO_PRD_AssocSet">
                     <End EntitySet="Products" Role="Product"/>
@@ -141,6 +142,10 @@
                     <End EntitySet="Orders" Role="Order"/>
                     <End EntitySet="Products" Role="Product"/>
                 </AssociationSet>
+                <AssociationSet Association="SuppliersModel.FK_Supplier_ContactPerson" Name="SUP_TO_CPE_AssocSet">
+                    <End EntitySet="ContactPersons" Role="ContactPerson"/>
+                    <End EntitySet="Suppliers" Role="Supplier"/>
+                </AssociationSet>                
             </EntityContainer>
 
             <Annotations Target="SuppliersModel.Supplier"
