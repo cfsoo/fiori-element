@@ -7,8 +7,9 @@ sap.ui.define([
     "sap/m/Text",
     "sap/m/Button",
     "sap/m/ButtonType",
-    "sap/m/DialogType"
-], function (SmartFilterBar, ComboBox, Filter, SmartField, Dialog, Text, Button, ButtonType, DialogType) {
+    "sap/m/DialogType",
+    "sap/m/MessageBox"
+], function (SmartFilterBar, ComboBox, Filter, SmartField, Dialog, Text, Button, ButtonType, DialogType, MessageBox) {
     "use strict";
 
     return sap.ui.controller("com.rizing.myfioriappproject.ext.controller.ListReportExtension", {
@@ -63,6 +64,14 @@ sap.ui.define([
                 var oContext = oItem.getBindingContext();
                 this._showChangeTotalSalesPopup(oContext);
             }
+        },
+
+        /**
+        * Event handler when user pressed on the Sales Overview icon.
+        * @public
+        */
+        onPressSalesOverview: function () {
+            MessageBox.success(this.getView().getModel("@i18n").getProperty("salesOverviewText"), {});
         },
 
         /**
