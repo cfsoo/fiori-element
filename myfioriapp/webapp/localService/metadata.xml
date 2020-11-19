@@ -217,7 +217,6 @@
                 <Property Name="FaxNumber" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Fax Number" sap:quickinfo="EPM Fiori Reference Apps: Fax Number"/>
                 <Property Name="PhoneNumber" Type="Edm.String" MaxLength="30" sap:display-format="UpperCase" sap:label="Phone Number" sap:quickinfo="EPM Fiori Ref Apps: Phone Number"/>
                 <Property Name="URL" Type="Edm.String" sap:label="Web Address" sap:quickinfo="EPM: Web Address"/>
-                <Property Name="TotalSales" Type="Edm.Decimal" Precision="19" Scale="2" sap:label="TotalSales" sap:quickinfo="EPM Fiori Ref Apps: Total Sales"/>
                 <NavigationProperty Name="to_Address" Relationship="SEPMRA_PROD_MAN.assoc_5A5270F64744207B0026143D2B225BFE" FromRole="FromRole_assoc_5A5270F64744207B0026143D2B225BFE" ToRole="ToRole_assoc_5A5270F64744207B0026143D2B225BFE"/>
                 <NavigationProperty Name="to_ContactPerson" Relationship="SEPMRA_PROD_MAN.assoc_B096949041976A9640D66CF8AF1D3F4F" FromRole="FromRole_assoc_B096949041976A9640D66CF8AF1D3F4F" ToRole="ToRole_assoc_B096949041976A9640D66CF8AF1D3F4F"/>
                 <NavigationProperty Name="to_PrimaryContactPerson" Relationship="SEPMRA_PROD_MAN.assoc_F084DD07968874308B48BE93BBA42D64" FromRole="FromRole_assoc_F084DD07968874308B48BE93BBA42D64" ToRole="ToRole_assoc_F084DD07968874308B48BE93BBA42D64"/>
