@@ -40,7 +40,7 @@
                 <Property Name="ContactPersonId" Type="Edm.Int32" />
 
                 <NavigationProperty FromRole="Supplier" Name="Product" Relationship="SuppliersModel.FK_Supplier_Product" ToRole="Product"/>
-
+                <NavigationProperty FromRole="Supplier" Name="ToContactPerson" Relationship="SuppliersModel.FK_Supplier_ContactPerson" ToRole="ContactPerson"/>
             </EntityType>
             <EntityType Name="Product">
                 <Key>
