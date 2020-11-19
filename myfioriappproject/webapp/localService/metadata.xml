@@ -37,6 +37,7 @@
                 <Property Name="Website" Type="Edm.String" MaxLength="Max" />
                 <Property Name="CountryId" Type="Edm.String" MaxLength="5" />
                 <Property Name="LogoPath" Type="Edm.String" MaxLength="255" />
+                <Property Name="ContactPersonId" Type="Edm.Int32" />
 
                 <NavigationProperty FromRole="Supplier" Name="Product" Relationship="SuppliersModel.FK_Supplier_Product" ToRole="Product"/>
 
