@@ -124,13 +124,13 @@
 
             <Association Name="FK_Supplier_ContactPerson">
                 <End Multiplicity="0..1" Role="Supplier" Type="SuppliersModel.Supplier"/>
-                <End Multiplicity="*" Role="ContactPerson" Type="SuppliersModel.ContactPerson"/>
+                <End Multiplicity="1" Role="ContactPerson" Type="SuppliersModel.ContactPerson"/>
                 <ReferentialConstraint>
-                    <Principal Role="ContactPerson">
-                        <PropertyRef Name="Id"/>
-                    </Principal>
-                    <Dependent Role="Supplier">
+                    <Principal Role="Supplier">
                         <PropertyRef Name="ContactPersonId"/>
+                    </Principal>
+                    <Dependent Role="ContactPerson">
+                        <PropertyRef Name="Id"/>
                     </Dependent>
                 </ReferentialConstraint>
             </Association>
@@ -401,6 +401,17 @@
                         </Record>
                     </Collection>
                 </Annotation>
+
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Target" AnnotationPath="Order/@UI.LineItem#OrderList"/>
+                            <PropertyValue Property="Label" String="Order List"/>
+                            <PropertyValue Property="ID" String="OrderList"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+
             </Annotations>
 
             <Annotations Target="SuppliersModel.Product/Name"
@@ -477,6 +488,85 @@
                     </Record>
                 </Annotation>
             </Annotations>
+
+            <Annotations Target="SuppliersModel.Order"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="UI.HeaderInfo">
+                    <Record Type="UI.HeaderInfoType">
+                        <PropertyValue Property="TypeName" String="Order"/>
+                        <PropertyValue Property="TypeNamePlural" String="Orders"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.LineItem" Qualifier="OrderList">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Id"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerName" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrderDate" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ShippedDate" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ShipVia" />
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.Order/Id"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Order ID">
+                </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.Order/CustomerName"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Customer">
+                </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.Order/OrderDate"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Order Date">
+                </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.Order/ShippedDate"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Shipped Date">
+                </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.Order/ShipVia"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Ship Via">
+                </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.SupplierEntities/Orders"
+            xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotation Term="Capabilities.InsertRestrictions">
+                <Record Type="Capabilities.InsertRestrictionsType">
+                    <PropertyValue Property="Insertable" Bool="false"/>
+                </Record>
+            </Annotation>
+            <Annotation Term="Capabilities.UpdateRestrictions">
+                <Record Type="Capabilities.UpdateRestrictionsType">
+                    <PropertyValue Property="Updatable" Bool="false"/>
+                </Record>
+            </Annotation>
+            <Annotation Term="Capabilities.DeleteRestrictions">
+                <Record Type="Capabilities.DeleteRestrictionsType">
+                    <PropertyValue Property="Deletable" Bool="false"/>
+                </Record>
+            </Annotation>
+        </Annotations>
+
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
