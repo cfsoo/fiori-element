@@ -16,7 +16,7 @@
     <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.html"
         xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Core.V1" Alias="Core"/>
-    </edmx:Reference>    
+    </edmx:Reference>
     <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='LOCAL')/$value">
         <edmx:Include Namespace="Org.OData.Measures.V1"/>
     </edmx:Reference>
@@ -86,6 +86,7 @@
                 <Property Name="Title" Type="Edm.String" MaxLength="30"/>
                 <Property Name="Email" Type="Edm.String" MaxLength="30"/>
                 <Property Name="Phone" Type="Edm.String" MaxLength="24"/>
+                <Property Name="ImagePath" Type="Edm.String" MaxLength="255"/>
             </EntityType>
             <EntityType Name="VH_Country">
                 <Key>
@@ -207,6 +208,12 @@
                         </Record>
                     </Collection>
                 </Annotation>
+                <!-- <Annotation Term="UI.QuickViewFacets">
+                    <Record Type="UI.ReferenceFacet">
+                        <PropertyValue Property="Label" String="Contact Person"/>
+                        <PropertyValue Property="Target" AnnotationPath="ToContactPerson/@Communication.Contact"/>
+                      </Record>                    
+                </Annotation> -->
                 <Annotation Term="UI.LineItem">
                     <Collection>
                         <Record Type="UI.DataField">
@@ -221,9 +228,10 @@
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="ContactPersonId" />
                         </Record>
-                        <!-- <Record Type="UI.DataFieldForAction">
-                            <PropertyValue Property="Label" Path="ContactPersonId"/>
-                            <PropertyValue String="ToContactPerson/@Communication.Contact" Property="Action"/>
+                        <!-- <Record Type="UI.DataFieldForAnnotation">
+                            <PropertyValue Property="Label" String="Contact Person"/>
+                            <PropertyValue Property="Target" AnnotationPath="ToContactPerson/@Communication.Contact"/>
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
                         </Record> -->
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="Country" />
@@ -242,6 +250,7 @@
                         <PropertyPath>CountryId</PropertyPath>
                     </Collection>
                 </Annotation>
+
             </Annotations>
 
             <Annotations Target="SuppliersModel.SupplierEntities/Suppliers"
@@ -279,6 +288,20 @@
                 xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.Label" String="Contact Person">
                 </Annotation>
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="CollectionPath" String="ContactPersons"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="ContactPersonId"/>
+                                    <PropertyValue Property="ValueListProperty" String="Id"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
             </Annotations>
 
             <Annotations Target="SuppliersModel.Supplier/City"
@@ -300,13 +323,14 @@
             </Annotations>
 
             <Annotations Target="SuppliersModel.Supplier/Website"
-            xmlns="http://docs.oasis-open.org/odata/ns/edm">
-            <Annotation Term="Core.IsURL" Bool="true">
-            </Annotation>
-        </Annotations>
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Core.IsURL" Bool="true">
+                </Annotation>
+            </Annotations>
 
             <Annotations Target="SuppliersModel.Supplier/CountryId"
                 xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Country"></Annotation>
                 <Annotation Term="Common.ValueList">
                     <Record>
                         <PropertyValue Property="CollectionPath" String="VH_Countries"/>
@@ -333,6 +357,11 @@
                 xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="UI.IsImageURL">
                 </Annotation>
+            </Annotations>
+
+            <Annotations Target="SuppliersModel.ContactPerson/Id"
+                xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Text" Path="Name"></Annotation>
             </Annotations>
 
             <Annotations Target="SuppliersModel.Product"
@@ -424,11 +453,12 @@
                 </Annotation>
             </Annotations>
 
-            <!-- <Annotations Target="SuppliersModel.ContactPerson"
+            <Annotations Target="SuppliersModel.ContactPerson"
                 xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Communication.Contact">
                     <Record Type="Communication.ContactType">
                         <PropertyValue Property="fn" Path="Name"/>
+                        <PropertyValue Property="title" Path="Title"/>
                         <PropertyValue Property="email">
                             <Collection>
                                 <Record Type="Communication.EmailAddressType">
@@ -436,9 +466,17 @@
                                 </Record>
                             </Collection>
                         </PropertyValue>
+                        <PropertyValue Property="tel">
+                            <Collection>
+                                <Record Type="Communication.PhoneNumberType">
+                                    <PropertyValue Property="type" EnumMember="Communication.PhoneType/cell"/>
+                                    <PropertyValue Property="uri" Path="Phone"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
                     </Record>
                 </Annotation>
-            </Annotations> -->
+            </Annotations>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
