@@ -13,6 +13,9 @@
         xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
     </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='LOCAL')/$value">
+		<edmx:Include Namespace="Org.OData.Measures.V1"/>
+	</edmx:Reference>
     <edmx:DataServices m:DataServiceVersion="2.0"
         xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
         <Schema Namespace="SuppliersModel"
@@ -295,7 +298,7 @@
                             </Record>
                         </PropertyValue>
                     </Record>
-                </Annotation>                
+                </Annotation>
                 <Annotation Term="UI.LineItem" Qualifier="ProductList">
                     <Collection>
                         <Record Type="UI.DataField">
@@ -333,6 +336,7 @@
                 xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.Label" String="Unit Price">
                 </Annotation>
+                <Annotation Term="Org.OData.Measures.V1.ISOCurrency" Path="CurrencyKey"></Annotation>
             </Annotations>
 
             <Annotations Target="SuppliersModel.Product/Discontinued"
