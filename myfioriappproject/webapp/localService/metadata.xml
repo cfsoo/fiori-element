@@ -114,7 +114,7 @@
                 <End Multiplicity="*" Role="Order" Type="SuppliersModel.Order"/>
                 <ReferentialConstraint>
                     <Principal Role="Order">
-                        <PropertyRef Name="ProductId"/>
+                        <PropertyRef Name="ProductID"/>
                     </Principal>
                     <Dependent Role="Product">
                         <PropertyRef Name="Id"/>

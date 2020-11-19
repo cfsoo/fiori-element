@@ -4,12 +4,12 @@
             "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Orders(10248)",
             "type": "NorthwindModel.Order"
         },
-        "Id": 10248,
+        "Id": 102,
         "ProductID": 1,
-        "CustomerName": "VINET",
+        "CustomerName": "Sarah Jackson",
         "OrderDate": "\/Date(836438400000)\/",
         "ShippedDate": "\/Date(837475200000)\/",
-        "ShipVia": 3,
+        "ShipVia": "Poslaju",
         "Customer": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Orders(10248)/Customer"
@@ -41,7 +41,7 @@
         "CustomerName": "TOMSP",
         "OrderDate": "\/Date(836524800000)\/",
         "ShippedDate": "\/Date(836956800000)\/",
-        "ShipVia": 1,
+        "ShipVia": "DHL",
         "Customer": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Orders(10249)/Customer"
@@ -73,7 +73,7 @@
         "CustomerName": "HANAR",
         "OrderDate": "\/Date(836784000000)\/",
         "ShippedDate": "\/Date(837129600000)\/",
-        "ShipVia": 2,
+        "ShipVia": "Fedex",
         "Customer": {
             "__deferred": {
                 "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Orders(10250)/Customer"
